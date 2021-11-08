@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحه شرکتی</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+    <header>
+          <nav>
+              <a href="#" class="hide-desktop">
+                  <img src="ham.svg" alt="" class="menu" id="menu">
+                </a>
+
+              <ul class="show-desktop hide-mobile" id="nav">
+                  <li id="exit" class="exit-btn hide-desktop">
+                      <img src="exit.svg" alt="">
+                  </li>
+                  <li><a href="#">خانه</a></li>
+                  <li><a href="#">خدمات</a></li>
+                  <li><a href="#">درباره ما</a></li>
+                  <li><a href="#">تماس با ما</a></li>
+              </ul>
+          </nav>
+          <a href="#">
+            <img src="logo.svg" alt="my corporation logo" class="logo">
+          </a>
+
+    </header>
+    <section>
+        <img src="server.svg" alt="" class="server">
+        <h1>خدمات وب برای مشاغل شما</h1>
+        <p class="subhead">بهترین انتخاب برای بالا بردن فروش کالا به مشتریان</p>
+        <img src="scroll.svg" alt="" class="scroll hide-mobile show-desktop">
+    </section>
+    </div>
+
+    <div class="bluecontainer">
+        <section class="container">
+            <ul>
+                <li>
+                    <img src="icon-1.svg" alt="">
+                    <p>
+                        لورم ایپسوم یا طرح‌نما  به متنی آزمایشی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>
+                </li>
+                <li>
+                    <img src="icon-2.svg" alt="">
+                    <p>
+                        لورم ایپسوم یا طرح‌نما  به متنی آزمایشی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>                </li>
+                <li>
+                    <img src="icon-3.svg" alt="">
+                    <p>
+                        لورم ایپسوم یا طرح‌نما  به متنی آزمایشی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده می نماید</p>                </li>
+            </ul>
+        </section>
+    </div>
+    <section class="gray">
+      <div class="container">
+        <ul>
+          <li>
+            <figure>
+              <img src="user1.png" alt="">
+              <blockquote>لورم ایپسوم یا طرح‌نما  به متنی آزمایشی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده </blockquote>
+              <figcaption>کاربر اول</figcaption>
+            </figure>
+          </li>
+          <li>
+            <figure>
+              <img src="user2.png" alt="">
+              <blockquote>لورم ایپسوم یا طرح‌نما  به متنی آزمایشی در صنعت چاپ، صفحه‌آرایی و طراحی گرافیک گفته می‌شود. طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای و ارایه اولیه شکل ظاهری و کلی طرح سفارش گرفته شده استفاده </blockquote>
+              <figcaption>کاربر دوم</figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container">
+      <h2>برای شروع آزمایشی آماده اید؟</h2>
+      <a href="#" class="cta">شروع کنید!</a>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="container">
+          <a href="#">
+            <img src="logo-white.svg" alt="" class="logo">
+          </a>
+          <p class="address">تهران<br/>میدان انقلاب ، خیابن کارگر شمالی</p>
+          <ul class="footer-links">
+            <li><a href="#">خط مشی ما</a></li>
+            <li><a href="#">شرایط قرار دادها</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </footer>
+
+    <!-- script for toggle menu mobile  -->
+    <script>
+      var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+  </body>
+</html>

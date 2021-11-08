@@ -431,6 +431,7 @@ width: 100%;
     overflow: hidden;
     vertical-align: middle;
     transition: color .4s ease;
+    margin-bottom: 10px;
 }
 .btn::before{
     content: '';
@@ -702,6 +703,11 @@ width: 100%;
 }
 .pp-body .description{
     margin-bottom: 20px;
+}
+.general-info{
+    margin-top: 4px;
+    border-top: 2px dotted rgb(255, 255, 255);
+    padding-top: 6px;
 }
 .pp-body .general-info li{
     margin-bottom: 10px;

@@ -1,0 +1,76 @@
+@media screen and (max-width: 721px){
+	.wrapper{width: :100%;}
+	.cover{
+		height: auto;
+	}
+	.logo{
+		display: table;
+		float: none;
+		clear: both;
+		margin: 5px auto;
+	}
+	.second{
+		width: 100%;
+	}
+	.masthead .wrapper{
+		width: 100%;	}
+	.second .wrapper{
+		width: 100%;
+	}
+	.services ul li{
+		width: 50%;
+		margin: 0;
+		padding: 15px;
+	}
+	.container{
+		width: 100%;
+	}
+	.text2{
+		padding: 0 30px;
+	}
+	.view .container p{
+		font-size: 25px;
+	}
+	.exibit .wrapper{
+		width: 100%;
+	}
+	.grid figure{
+		width: 30%;
+		height: auto;
+	}
+	.lesswidth{
+		width: 100%;
+	}
+	.customer .wrapper{
+		width: 100%;
+	}
+	.wrapper{
+		width: 100%;
+	}
+	.map,.contactform{
+		width: 100%;
+		float: none;
+		padding: 5px 10px;
+	}
+}
+@media screen and (max-width: 480px){
+	.textcover{
+		top: 10%;
+	}
+	.wrapper nav{
+		display: none;
+	}
+	.responsive-nav{
+		display: block;
+	}
+	.text2{
+		width: 100%;
+	}
+	.grid figure {width: 40%;}
+	.view .container p{
+		font-size: 18px;
+	}
+	.map iframe{
+		width: 100%;
+	}
+}
