@@ -30,9 +30,11 @@ document.querySelector('.pp-close').addEventListener('click' , togglePortfolioPo
 document.addEventListener('click' , (e)=>{
     if(e.target.classList.contains('pp-inner')){
         togglePortfolioPopup();
+        document.querySelector(".portfolio-popup").scrollTo(0,0);
+        portfolioItemDetails(e.target.parentElement);
     }
 })
-function portfolioItemDetails() {
+function portfolioItemDetails(portfolioItem) {
     document.querySelector('.pp-thumbnail img').src = 
     portfolioItem.querySelector('.portfolio-item-thumbnail').src;
     document.querySelector('.pp-header h3').innerHTML =
@@ -71,6 +73,8 @@ document.addEventListener('click' , (e)=>{
         setTimeout( ()=>{
             document.querySelector('section.active').classList.remove('active', 'fade-out');
             document.querySelector(e.target.hash).classList.add('active');
+            window.scrollTo(0,0);
+            document.body.classList.remove("hide-scrolling");
         navToggler.classList.remove('hide');
         document.querySelector('.overlay').classList.remove('active');
         } , 500)
